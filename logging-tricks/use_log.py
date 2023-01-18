@@ -5,8 +5,14 @@ from app import do_something
 # logger.add("app.log")
 logger.add(
     "app.log",
-    format="{time} | {name} | {level} | {message}",
+    format="{time:YYYY-MM-DD at HH:mm:ss} | {name} | {level} | {message}",
     level="INFO"
+)
+
+logger.add(
+    "error.log",
+    format="{time:YYYY-MM-DD at HH:mm:ss} | {name} | {level} | {message}",
+    level="ERROR"
 )
 
 do_something()

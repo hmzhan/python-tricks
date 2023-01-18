@@ -1,7 +1,7 @@
 
 from loguru import logger
 
-logger.add("app.log")
+# logger.add("app.log")
 
 
 def do_something():

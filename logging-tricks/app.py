@@ -1,7 +1,11 @@
-
+import sys
 from loguru import logger
 
-# logger.add("app.log")
+logger.add(
+    sys.stderr,
+    format="{time:YYYY-MM-DD at HH:mm:ss} | {name} | {level} | {message}",
+    level="INFO"
+)
 
 
 def do_something():
